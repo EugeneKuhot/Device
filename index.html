@@ -6,62 +6,55 @@
   </head>
   <body>
   	<header class="main-header container">
-  		
-  		<h1 class="visually-hidden">Интернет-магазин Device</h1>
+  
+  		<a class="header-logo" href="#">
+  			<img src="#" width="0" height="0" alt="Логотип магазина Девайс">
+  		</a>
 
-  			<nav class="user-nav">  				
-  				<form class="main-search">  				
-  					<input type="search" name="search" value="Поиск по сайту">
-  				</form>
+  		<nav class="user-nav">  				
+  			<form class="main-search">  				
+  				<input type="search" name="search" value="Поиск по сайту">
+  			</form>
 				
-				<ul class="user">
-					<li class="header-log-in">
-						<a href="#">Вoйти</a>
-					</li>
-					<li class="compare">
-						<a href="#">Сравнить</a>
-					</li>
-					<li class="cart">
-						<a href="#">Корзина</a>
-					</li>
-				</ul>
-			</nav>
+			<ul class="user">
+				<li class="header-log-in">
+					<a href="#">Вoйти</a>
+				</li>
+				<li class="compare">
+					<a href="#">Сравнить</a>
+				</li>
+				<li class="cart">
+					<a href="#">Корзина</a>
+				</li>
+			</ul>
+		</nav>
 
 
-			<nav class="main-navigation">
+		<nav class="main-navigation">
+			<ul class="main-menu">
+				<li><a class="catalog">Каталог товаров</a>
+					<ul class="sub-menu">
+						<li>Виртуальная реальность</li>
+						<li>Фитнеc-браслеты</li>
+						<li>Квадрокоптеры</li>
+						<li>Моноподы для селфи</li>
+						<li>Умные часы</li>
+						<li>Экшн-камеры</li>
+					</ul>
+				</li>
+			</ul>
+			<!--Спан поставил потому что нигде не увидел перехода по этой ссылке. Видел только выпадающее меню cо ссылками на различные группы товаров (ссылки), которое я думал сделать с помощью ховера. И так как мне на тот момент казалось, что это не ссылка, я вставил спан-->	
 
-				<a class="header-logo" href="#">
-  					<img src="#" width="0" height="0" alt="Логотип магазина Девайс">
-  				</a>
-				
-				<span class="catalog">Каталог товаров</span>
-				
-				<table class="catalog-hidden">
-					<tr>
-						<td>Виртуальная реальность</td>
-						<td>Фитнеc-браслеты</td>
-						<td>Квадрокоптеры</td>
-					</tr>
-					<tr>
-						<td>Моноподы для селфи</td>
-						<td>Умные часы</td>
-						<td></td>
-					<tr>
-						<td>Экшн-камеры</td>
-						<td></td>
-						<td></td>						
-					</tr>
-				</table>
-
-				<ul class="main-nav-options">
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-  			</nav>
-  		</header>
+			<ul class="main-nav-options">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+  		</nav>
+  	</header>
 	
 	<main class="container">
+		<h1 class="visually-hidden">Интернет-магазин Device</h1>
 		<section class="about-us">
 			<h2>О нас</h2>
 			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -80,7 +73,9 @@
 		<section class="contacts">
 			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-			<img src="#" alt="Расположение магазина Девайс на карте Москвы - улица Строителей 15">
+			<a href="#" class="map">
+				<img src="#" alt="Расположение магазина Девайс на карте Москвы - улица Строителей 15">
+			</a>
 			<a href="#" class="button contacts-btn">Нaпишите нам</a>
 		</section>
 		
@@ -88,12 +83,12 @@
 
 
 	<footer class="container">
+		<a class="footer-logo" href="#">
+  			<img src="#" width="0" height="0" alt="Логотип магазина Девайс">
+  		</a>
 		<nav class="footer-navigation">
-			<a class="footer-logo" href="#">
-  				<img src="#" width="0" height="0" alt="Логотип магазина Девайс">
-  			</a>
-
-  			<ul>
+			
+ 			<ul>
   				<li>Доставка</li>
   				<li>Гарантия</li>
   				<li>Контакты</li>

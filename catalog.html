@@ -6,9 +6,7 @@
   </head>
   <body>
   	<header class="main-header container">
-  		
-  		<h1 class="visually-hidden">Интернет-магазин Device</h1>
-
+   		
   			<nav class="user-nav">  				
   				<form class="main-search">  				
   					<input type="search" name="search" value="Поиск по сайту">
@@ -16,7 +14,7 @@
 				
 				<ul class="user">
 					<li class="header-log-in">
-						<span class="user-name">Валентин Петухов</span>
+						<a class="user-name">Валентин Петухов</a>
 						<a href="#">Выйти</a>
 					</li>
 					<li class="compare">
@@ -63,30 +61,31 @@
   	</header>
 	
 	<main class="container">
-		<h2>Моноподы для селфи</h2>
-		<ul>
-			<li>Главная</li>
-			<li>Каталог товаров</li>
-			<li>Моноподы для селфи</li>
-		</ul>
+		<h1>Моноподы для селфи</h1>
+		<div class="breadcrumbs">
+			<a>Главная</a>
+			<a>Каталог товаров</a>
+			<a>Моноподы для селфи</a>
+		</div>
+		<!--к сожалению, этого еще не проходил-->
 
 		<section class="filter">
-			<h3>Цвет</h3>
-			<ul>
-				<li>Черный</li>
-				<li>Белый</li>
-				<li>Синий</li>
-				<li>Красный</li>
-				<li>Розовый</li>
-			</ul>
+			<form>
+				<h3>Цвет</h3>
+					<input type="checkbox" checked>Чёрный<br>
+					<input type="checkbox">Белый<br>
+					<input type="checkbox" checked>Синий<br>
+					<input type="checkbox" checked>Красный<br>
+					<input type="checkbox">Розовый<br>
 
-			<h3>Bluetooth</h3>
-			<ul>
-				<li>Есть</li>
-				<li>Нет</li>
-			</ul>
+				<h3>Bluetooth</h3>
+				<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
+				<label for="blth-yes">Есть</label>
 
-			<button class="filter-btn">Показать</button>
+				<input type="radio" name="bluetooth" id="blth-no" value="Нет">
+				<label for="blth-no">Нет	</label>
+				<input type="submit" value="Показать">
+			</form>
 		</section>
 
 		<section class="items">
@@ -94,40 +93,42 @@
 				<li>
 					<a href="#">
 						<h3>Любительская селфи-палка</h3>
-						<span>500 руб.</span>
-						<img src="#" alt="Любительская селфи-палка">
 					</a>
+					<span>500 руб.</span>
+					<img src="#" alt="Любительская селфи-палка">
+					
 				</li>
 				<li>
 					<a href="#">
 						<h3>Профессиональная селфи-палка</h3>
-						<span>1500 руб.</span>
-						<img src="#" alt="Профессиональная селфи-палка">
 					</a>
+					<span>1500 руб.</span>
+					<img src="#" alt="Профессиональная селфи-палка">
+					
 				</li>
 				<li>
 					<a href="#">
 						<h3>Непотопляемая селфи-палка</h3>
+					</a>
 						<span>2 500 руб</span>
 						<img src="#" alt="Непотопляемая селфи-палка">
-					</a>
 				</li>
 				<li>
 					<a href="#">
 						<h3>Селфи-палка «Следуй за мной»</h3>
-						<span>4 900 руб.</span>
-						<img src="#" alt="Селфи-палка «Следуй за мной»">
 					</a>
+					<span>4 900 руб.</span>
+					<img src="#" alt="Селфи-палка «Следуй за мной»">
+					
 				</li>
 			</ul>			
 		</section>
 	</main>
 	<footer class="container">
+		<a class="footer-logo" href="#">
+  			<img src="#" width="0" height="0" alt="Логотип магазина Девайс">
+  		</a>
 		<nav class="footer-navigation">
-			<a class="footer-logo" href="#">
-  				<img src="#" width="0" height="0" alt="Логотип магазина Девайс">
-  			</a>
-
   			<ul>
   				<li>Доставка</li>
   				<li>Гарантия</li>
