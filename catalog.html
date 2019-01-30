@@ -2,36 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>HTML Academy: Девайс/Моноподы для селфи</title>
   </head>
   <body>
   	<header class="main-header container">
+
+  		<a class="header-logo" href="#">
+  			<img src="PS\svg-device\Done\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
+  		</a>
    		
-  			<nav class="user-nav">  				
-  				<form class="main-search">  				
-  					<input type="search" name="search" value="Поиск по сайту">
-  				</form>
+  		<nav class="user-nav">  				
+  			<form class="main-search">  				
+  				<input type="search" name="search" value="Поиск по сайту">
+  			</form>
 				
-				<ul class="user">
-					<li class="header-log-in">
-						<a class="user-name">Валентин Петухов</a>
-						<a href="#">Выйти</a>
-					</li>
-					<li class="compare">
-						<a href="#">Сравнить</a>
-					</li>
-					<li class="cart">
-						<a href="#">Корзина</a>
-					</li>
-				</ul>
-			</nav>
+			<ul class="user">
+				<li class="header-log-in">
+					<a class="user-name" href="#">Валентин Петухов</a>
+					<a href="#">Выйти</a>
+				</li>
+				<li class="compare">
+					<a href="#">Сравнить</a>
+				</li>
+				<li class="cart">
+					<a href="#">Корзина</a>
+				</li>
+			</ul>
+		</nav>
 
 
 			<nav class="main-navigation">
-
-				<a class="header-logo" href="#">
-  					<img src="#" width="0" height="0" alt="Логотип магазина Девайс">
-  				</a>
 				
 				<span class="catalog">Каталог товаров</span>
 				
@@ -63,8 +63,8 @@
 	<main class="container">
 		<h1>Моноподы для селфи</h1>
 		<div class="breadcrumbs">
-			<a>Главная</a>
-			<a>Каталог товаров</a>
+			<a href="#">Главная</a>
+			<a href="#">Каталог товаров</a>
 			<a>Моноподы для селфи</a>
 		</div>
 		<!--к сожалению, этого еще не проходил-->
@@ -77,7 +77,7 @@
 					<input type="checkbox" checked>Синий<br>
 					<input type="checkbox" checked>Красный<br>
 					<input type="checkbox">Розовый<br>
-
+				<!--Ок, подожду урока, надеюсь научат, как этого избежать-->
 				<h3>Bluetooth</h3>
 				<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
 				<label for="blth-yes">Есть</label>
@@ -95,7 +95,7 @@
 						<h3>Любительская селфи-палка</h3>
 					</a>
 					<span>500 руб.</span>
-					<img src="#" alt="Любительская селфи-палка">
+					<img src="PS\svg-device\Done\item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
 					
 				</li>
 				<li>
@@ -103,7 +103,7 @@
 						<h3>Профессиональная селфи-палка</h3>
 					</a>
 					<span>1500 руб.</span>
-					<img src="#" alt="Профессиональная селфи-палка">
+					<img src="PS\svg-device\Done\item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 					
 				</li>
 				<li>
@@ -111,14 +111,14 @@
 						<h3>Непотопляемая селфи-палка</h3>
 					</a>
 						<span>2 500 руб</span>
-						<img src="#" alt="Непотопляемая селфи-палка">
+						<img src="PS\svg-device\Done\item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 				</li>
 				<li>
 					<a href="#">
 						<h3>Селфи-палка «Следуй за мной»</h3>
 					</a>
 					<span>4 900 руб.</span>
-					<img src="#" alt="Селфи-палка «Следуй за мной»">
+					<img src="PS\svg-device\Done\item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 					
 				</li>
 			</ul>			
@@ -127,14 +127,14 @@
 	<footer class="container">
 
 		<a class="footer-logo" href="#">
-  			<img src="#" width="0" height="0" alt="Логотип магазина Девайс">
+  			<img src="PS\svg-device\Done\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
   		</a>
   		
 		<nav class="footer-navigation">
   			<ul>
-  				<li>Доставка</li>
-  				<li>Гарантия</li>
-  				<li>Контакты</li>
+  				<li><a href="#">Доставка</a></li>
+  				<li><a href="#">Гарантия</a></li>
+  				<li><a href="#">Контакты</a></li>
   			</ul>			
 		</nav>
 		
@@ -149,17 +149,17 @@
 		<ul class="social">
 			<li class="social-fb">
 				<a href="#">
-					<img src="#" alt="Facebook">
+					<img src="PS\svg-device\Done\fb.svg" width="32" height="32" alt="Facebook">
 				</a>
 			</li>
 			<li class="social-inst">
 				<a href="#">
-					<img src="#" alt="Instagram">
+					<img src="PS\svg-device\Done\instagram.svg" width="32" height="32" alt="Instagram">
 				</a>
 			</li>
 			<li class="social-tw">
 				<a href="#">
-					<img src="#" alt="Twitter">
+					<img src="PS\svg-device\Done\twitter.svg" width="32" height="32" alt="Twitter">
 				</a>
 			</li>
 		</ul>
@@ -168,7 +168,7 @@
 		<span class="tel">Тел.: +7 (495) 495-95-95</span>
 			
 		<a href="#">
-			<img src="#" alt="HTMLAcademy-logo">
+			<img src="PS\svg-device\Done\logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
 		</a>
 	</footer>
    </body>
