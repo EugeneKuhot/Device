@@ -12,7 +12,7 @@
   		</a>
    		
   		<nav class="user-nav">  				
-  			<form class="main-search">  				
+  			<form class="main-search" action="http://echo.htmlacademy.ru" method="post">  				
   				<input type="search" name="search" value="Поиск по сайту">
   			</form>
 				
@@ -55,27 +55,33 @@
 	
 	<main class="container">
 		<h1>Моноподы для селфи</h1>
-		<div class="breadcrumbs">
-			<a href="#">Главная</a>
-			<a href="#">Каталог товаров</a>
-			<a>Моноподы для селфи</a>
-		</div>
-		<!--к сожалению, этого еще не проходил-->
+		<ul class="breadcrumbs">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Каталог товаров</a></li>
+			<li class="breadcrumbs-current">Моноподы для селфи</li>
+		</ul>
 
 		<section class="filter">
-			<form>
+			<form action="http://echo.htmlacademy.ru" method="post">
 				<h3>Цвет</h3>
-					<input type="checkbox" checked>Чёрный<br>
-					<input type="checkbox">Белый<br>
-					<input type="checkbox" checked>Синий<br>
-					<input type="checkbox" checked>Красный<br>
-					<input type="checkbox">Розовый<br>
+					<ul class="filter-color">
+						<li><input type="checkbox" checked>Чёрный</li>
+						<li><input type="checkbox">Белый</li>
+						<li><input type="checkbox" checked>Синий</li>
+						<li><input type="checkbox" checked>Красный</li>
+						<li><input type="checkbox">Розовый</li>
+					</ul>
 				<h3>Bluetooth</h3>
-				<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
-				<label for="blth-yes">Есть</label>
-
-				<input type="radio" name="bluetooth" id="blth-no" value="Нет">
-				<label for="blth-no">Нет</label>
+				<ul>
+					<li>
+						<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
+						<label for="blth-yes">Есть</label>
+					</li>
+					<li>
+						<input type="radio" name="bluetooth" id="blth-no" value="Нет">
+						<label for="blth-no">Нет</label>
+					</li>
+				</ul>
 				<input type="submit" value="Показать">
 			</form>
 		</section>
