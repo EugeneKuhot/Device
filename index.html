@@ -12,7 +12,7 @@
   		</a>
 
   		<nav class="user-nav">  				
-  			<form class="main-search">  				
+  			<form class="main-search" action="http://echo.htmlacademy.ru" method="get">  				
   				<input type="search" name="search" value="Поиск по сайту">
   			</form>
 				
@@ -209,13 +209,13 @@
 
 		<ul class="social">
 			<li>
-				<a href="#" class="social-fb">Facebook</a>
+				<a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a>
 			</li>
 			<li>
-				<a href="#" class="social-inst">Instagram</a>
+				<a href="#" class="social-inst"><span class="visually-hidden">Instagram</span></a>
 			</li>
 			<li>
-				<a href="#" class="social-tw">Twitter</a>
+				<a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a>
 			</li>
 		</ul>
 
@@ -240,14 +240,15 @@
 			<p class="your-email">
 				<label>
 					Ваш e-mail:
-					<input type="text" name="e-mail" placeholder="email@example.com" required>
+					<input type="e-mail" name="e-mail" placeholder="email@example.com" required>
 				</label>
 			</p>
 
 			<p class="letter-text">
 				<label>
 					Текст письма:
-					<input type="text" name="letter" placeholder="В свободной форме">
+					<textarea placeholder="В свободной форме">
+					</textarea>
 				</label>
 			</p>
 			<input type="submit" name="submit" value="Отправить">
