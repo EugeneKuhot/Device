@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс/Моноподы для селфи</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
   </head>
   <body>
   	<header class="main-header container">
@@ -12,7 +14,7 @@
   		</a>
    		
   		<nav class="user-nav">  				
-  			<form class="main-search" action="http://echo.htmlacademy.ru" method="post">  				
+  			<form class="main-search" action="http://echo.htmlacademy.ru" method="get">  				
   				<input type="search" name="search" value="Поиск по сайту">
   			</form>
 				
@@ -62,47 +64,49 @@
 		</ul>
 
 		<section class="filter">
+			
 			<form action="http://echo.htmlacademy.ru" method="post">
-				<h3>Цвет</h3>
-					<ul class="filter-color">
+					<h3>Цвет</h3>
+						<ul class="filter-color">
+							<li>
+								<label>
+									<input type="checkbox" name="filter-color-black" checked>Чёрный
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="filter-color-white">Белый
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="filter-color-blue" checked>Синий
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="filter-color-red" checked>Красный
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="filter-color-pink">Розовый
+								</label>
+							</li>
+						</ul>
+					<h3>Bluetooth</h3>
+					<ul class="filter-bluetooth">
 						<li>
-							<label>
-								<input type="checkbox" name="filter-color-black" checked>Чёрный
-							</label>
+							<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
+							<label for="blth-yes">Есть</label>
 						</li>
 						<li>
-							<label>
-								<input type="checkbox" name="filter-color-white">Белый
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="checkbox" name="filter-color-blue" checked>Синий
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="checkbox" name="filter-color-red" checked>Красный
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="checkbox" name="filter-color-pink">Розовый
-							</label>
+							<input type="radio" name="bluetooth" id="blth-no" value="Нет">
+							<label for="blth-no">Нет</label>
 						</li>
 					</ul>
-				<h3>Bluetooth</h3>
-				<ul>
-					<li>
-						<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
-						<label for="blth-yes">Есть</label>
-					</li>
-					<li>
-						<input type="radio" name="bluetooth" id="blth-no" value="Нет">
-						<label for="blth-no">Нет</label>
-					</li>
-				</ul>
-				<input type="submit" value="Показать">
+					<input class="button" type="submit" value="Показать">
+
 			</form>
 		</section>
 
@@ -112,7 +116,7 @@
 					<a href="#">
 						<h3>Любительская селфи-палка</h3>
 					</a>
-					<span>500 руб.</span>
+					<span class="price">500 руб.</span>
 					<img src="img\jpg\item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
 					
 				</li>
@@ -120,7 +124,7 @@
 					<a href="#">
 						<h3>Профессиональная селфи-палка</h3>
 					</a>
-					<span>1500 руб.</span>
+					<span class="price">1500 руб.</span>
 					<img src="img\jpg\item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 					
 				</li>
@@ -128,14 +132,14 @@
 					<a href="#">
 						<h3>Непотопляемая селфи-палка</h3>
 					</a>
-						<span>2 500 руб</span>
+						<span class="price">2 500 руб</span>
 						<img src="img\jpg\item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 				</li>
 				<li>
 					<a href="#">
 						<h3>Селфи-палка «Следуй за мной»</h3>
 					</a>
-					<span>4 900 руб.</span>
+					<span class="price">4 900 руб.</span>
 					<img src="img\jpg\item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 					
 				</li>
@@ -143,46 +147,53 @@
 		</section>
 	</main>
 	<footer class="container">
-
-		<a class="footer-logo" href="#">
-  			<img src="img\svg\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
-  		</a>
-  		
-		<nav class="footer-navigation">
-  			<ul>
-  				<li><a href="#">Доставка</a></li>
-  				<li><a href="#">Гарантия</a></li>
-  				<li><a href="#">Контакты</a></li>
-  			</ul>			
-		</nav>
 		
-		<nav class="footer-user-navigation">
-			<ul class="user">
-				<li class="log-in"><a href="#">Вoйти</a></li>
-				<li class="compare"><a href="#">Сравнить</a></li>
-				<li class="cart"><a href="#">Корзина</a></li>
+		<div class="footer-top">
+			<a class="footer-logo" href="#">
+  				<img src="img\svg\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
+  			</a>
+
+  			<nav class="footer-user-navigation">
+				<ul class="user">
+					<li class="log-in"><a href="#">Вoйти</a></li>
+					<li class="compare"><a href="#">Сравнить</a></li>
+					<li class="cart"><a href="#">Корзина</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="footer-middle">
+			<address>г. Москва, ул. Строителей, 15</address>
+
+			<nav class="footer-navigation">
+ 				<ul>
+  					<li><a href="#">Доставка</a></li>
+  					<li><a href="#">Гарантия</a></li>
+  					<li><a href="#">Контакты</a></li>
+  				</ul>			
+			</nav>
+
+			<span class="tel">Тел.: +7 (495) 495-95-95</span>			
+		</div>
+
+		<div class="footer-bottom">
+			<ul class="social">
+				<li>
+					<a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a>
+				</li>
+				<li>
+					<a href="#" class="social-inst"><span class="visually-hidden">Instagram</span></a>
+				</li>
+				<li>
+					<a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a>
+				</li>
 			</ul>
-		</nav>
-
-		<ul class="social">
-			<li>
-				<a href="#" class="social-fb">Facebook</a>
-			</li>
-			<li>
-				<a href="#" class="social-inst">Instagram</a>
-			</li>
-			<li>
-				<a href="#" class="social-tw">Twitter</a>
-			</li>
-		</ul>
-
-
-		<address>г. Москва, ул. Строителей, 15</address>
-		<span class="tel">Тел.: +7 (495) 495-95-95</span>
 			
-		<a href="#">
-			<img src="img\svg\logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
-		</a>
+			<a href="#">
+				<img src="img\svg\logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
+			</a>
+		</div>
 	</footer>
+
    </body>
 </html>

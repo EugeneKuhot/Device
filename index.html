@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
   </head>
   <body>
   	<header class="main-header container">
@@ -14,6 +16,7 @@
   		<nav class="user-nav">  				
   			<form class="main-search" action="http://echo.htmlacademy.ru" method="get">  				
   				<input type="search" name="search" value="Поиск по сайту">
+  				
   			</form>
 				
 			<ul class="user">
@@ -55,11 +58,10 @@
 	<main class="container">
 		<h1 class="visually-hidden">Интернет-магазин Device</h1>
 		
-		<section class="container">
   			<section class="top-item">
   				<img src="img\png\slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
   				<span class="top1">01</span>
-  				<h2>Делай селфи, как Бен Стиллер!</h2>
+  				<span class="tagline">Делай селфи, как Бен Стиллер!</span>
   				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
   				<a href="#">Подробнее</a>
 
@@ -114,8 +116,6 @@
   					</li>
   				</ul>
   			</section>
-		</section>
-
 <!--
   		<section class="servises">
   			<h2 class="visually-hidden"></h2>
@@ -134,27 +134,27 @@
 
 -->
 
-		<section class="partners">
-			<h2>Партнёры</h2>
+		<section class="brands">
+			<h2 class="visually-hidden">Бренды</h2>
 			<ul>
 				<li class="dji">
 					<a href="#">
-						<img src="img\png\dji.png" alt="">
+						<img src="img\png\dji.png" alt="Логотип фирмы dji">
 					</a>
 				</li>
 				<li class="sp-gadgets">
 					<a  href="#">
-						<img src="img\png\spgadgets.png" alt="">
+						<img src="img\png\spgadgets.png" alt="Логотип фирмы Sp-gadgets">
 					</a>
 				</li>
 				<li class="gopro">
 					<a href="#">
-						<img src="img\png\gopro.png" alt="">
+						<img src="img\png\gopro.png" alt="Логотип фирмы Go-Pro">
 					</a>
 				</li>
 				<li class="vive">
 					<a href="#">
-						<img src="img\png\vive.png" alt="">
+						<img src="img\png\vive.png" alt="Логотип фирмы Vive">
 					</a>
 				</li>
 			</ul>
@@ -167,7 +167,7 @@
 			
 			<!--Вижу что последний абзац логически связан со списком, но ничего с этим не могу поделать-->
 
-			<ul>
+			<ul class="transport">
 				<li>Деловые Линии</li>
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
@@ -186,47 +186,58 @@
 		
 	</main>
 
-	<footer class="container">
-		
-		<a class="footer-logo" href="#">
-  			<img src="img\svg\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
-  		</a>
-		<nav class="footer-navigation">
- 			<ul>
-  				<li><a href="#">Доставка</a></li>
-  				<li><a href="#">Гарантия</a></li>
-  				<li><a href="#">Контакты</a></li>
-  			</ul>			
-		</nav>
-		
-		<nav class="footer-user-navigation">
-			<ul class="user">
-				<li class="log-in"><a href="#">Вoйти</a></li>
-				<li class="compare"><a href="#">Сравнить</a></li>
-				<li class="cart"><a href="#">Корзина</a></li>
-			</ul>
-		</nav>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="footer-top">
+				<a class="footer-logo" href="#">
+	  				<img src="img\svg\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
+	  			</a>
 
-		<ul class="social">
-			<li>
-				<a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a>
-			</li>
-			<li>
-				<a href="#" class="social-inst"><span class="visually-hidden">Instagram</span></a>
-			</li>
-			<li>
-				<a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a>
-			</li>
-		</ul>
+	  			<nav class="footer-user-navigation">
+					<ul class="user">
+						<li class="log-in"><a href="#">Вoйти</a></li>
+						<li class="compare"><a href="#">Сравнить</a></li>
+						<li class="cart"><a href="#">Корзина</a></li>
+					</ul>
+				</nav>
+			</div>
 
-		<address>г. Москва, ул. Строителей, 15</address>
-		<span class="tel">Тел.: +7 (495) 495-95-95</span>
-			
-		<a href="#">
-			<img src="img\svg\logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
-		</a>
+			<div class="footer-middle">
+				<address>г. Москва, ул. Строителей, 15</address>
+
+				<nav class="footer-navigation">
+	 				<ul class="footer-navigation-items">
+	  					<li><a href="#">Доставка</a></li>
+	  					<li><a href="#">Гарантия</a></li>
+	  					<li><a href="#">Контакты</a></li>
+	  				</ul>			
+				</nav>
+
+				<span class="tel">Тел.: +7 (495) 495-95-95</span>			
+			</div>
+
+			<div class="footer-bottom">
+				<ul class="social">
+					<li>
+						<a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a>
+					</li>
+					<li>
+						<a href="#" class="social-inst"><span class="visually-hidden">Instagram</span></a>
+					</li>
+					<li>
+						<a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a>
+					</li>
+				</ul>
+				
+				<a href="#">
+					<img src="img\svg\logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
+				</a>
+			</div>
+		</div>
 	</footer>
-	<section class="contact-form">
+
+
+	<div class="contact-form">
 
 		<form action="http://echo.htmlacademy.ru" method="post">
 			
@@ -240,7 +251,7 @@
 			<p class="your-email">
 				<label>
 					Ваш e-mail:
-					<input type="e-mail" name="e-mail" placeholder="email@example.com" required>
+					<input type="email" name="e-mail" placeholder="email@example.com" required>
 				</label>
 			</p>
 
@@ -251,8 +262,13 @@
 					</textarea>
 				</label>
 			</p>
-			<input type="submit" name="submit" value="Отправить">
+			<button type="submit" name="submit" value="Отправить">
 		</form>
-	</section>
+	</div>
+
+	<div class="map">
+		
+	</div>
+
    </body>
 </html>
