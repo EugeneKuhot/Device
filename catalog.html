@@ -4,21 +4,22 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс/Моноподы для селфи</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="main-header container">
-
-  		<a class="header-logo" href="#">
+  
+  		<a href="index.html" class="header-logo interactive-exception">
   			<img src="img\svg\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
   		</a>
-   		
+
   		<nav class="user-nav">  				
   			<form class="main-search" action="http://echo.htmlacademy.ru" method="get">  				
   				<input type="search" name="search" value="Поиск по сайту">
+  				<button type="submit"></button>
   			</form>
 				
-			<ul class="user">
+			<ul class="user no-markers interactive">
 				<li class="header-log-in">
 					<a class="user-name" href="#">Валентин Петухов</a>
 					<a href="#">Выйти</a>
@@ -34,20 +35,20 @@
 
 
 		<nav class="main-navigation">
-			<ul class="main-menu">
-				<li><a class="catalog">Каталог товаров</a>
-					<ul class="sub-menu">
+			<ul class="main-menu no-markers">
+				<li><a href="#" class="catalog interactive-exception">Каталог товаров</a>
+					<ul class="sub-menu no-markers interactive">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="#">Фитнеc-браслеты</a></li>
 						<li><a href="#">Квадрокоптеры</a></li>
-						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="catalog.html">Моноподы для селфи</a></li>
 						<li><a href="#">Умные часы</a></li>
 						<li><a href="#">Экшн-камеры</a></li>
 					</ul>
 				</li>
 			</ul>
 
-			<ul class="main-nav-options">
+			<ul class="main-nav-options no-markers interactive">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Контакты</a></li>
@@ -56,18 +57,18 @@
   	</header>
 	
 	<main class="container">
-		<h1>Моноподы для селфи</h1>
-		<ul class="breadcrumbs">
+		<h1 class="page-title">Моноподы для селфи</h1>
+		<ul class="breadcrumbs no-markers">
 			<li><a href="#">Главная</a></li>
 			<li><a href="#">Каталог товаров</a></li>
 			<li class="breadcrumbs-current">Моноподы для селфи</li>
 		</ul>
 
 		<section class="filter">
-			
+
 			<form action="http://echo.htmlacademy.ru" method="post">
-					<h3>Цвет</h3>
-						<ul class="filter-color">
+					<h3 class="item-title">Цвет</h3>
+						<ul class="filter-color no-markers interactive">
 							<li>
 								<label>
 									<input type="checkbox" name="filter-color-black" checked>Чёрный
@@ -94,8 +95,8 @@
 								</label>
 							</li>
 						</ul>
-					<h3>Bluetooth</h3>
-					<ul class="filter-bluetooth">
+					<h3 class="item-title">Bluetooth</h3>
+					<ul class="filter-bluetooth no-markers interactive">
 						<li>
 							<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
 							<label for="blth-yes">Есть</label>
@@ -111,10 +112,10 @@
 		</section>
 
 		<section class="items">
-			<ul>
+			<ul class="no-markers">
 				<li>
 					<a href="#">
-						<h3>Любительская селфи-палка</h3>
+						<h3 class="item-title">Любительская селфи-палка</h3>
 					</a>
 					<span class="price">500 руб.</span>
 					<img src="img\jpg\item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -122,7 +123,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<h3>Профессиональная селфи-палка</h3>
+						<h3 class="item-title">Профессиональная селфи-палка</h3>
 					</a>
 					<span class="price">1500 руб.</span>
 					<img src="img\jpg\item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -130,14 +131,14 @@
 				</li>
 				<li>
 					<a href="#">
-						<h3>Непотопляемая селфи-палка</h3>
+						<h3 class="item-title">Непотопляемая селфи-палка</h3>
 					</a>
 						<span class="price">2 500 руб</span>
 						<img src="img\jpg\item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 				</li>
 				<li>
 					<a href="#">
-						<h3>Селфи-палка «Следуй за мной»</h3>
+						<h3 class="item-title">Селфи-палка «Следуй за мной»</h3>
 					</a>
 					<span class="price">4 900 руб.</span>
 					<img src="img\jpg\item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
@@ -146,52 +147,53 @@
 			</ul>			
 		</section>
 	</main>
-	<footer class="container">
-		
-		<div class="footer-top">
-			<a class="footer-logo" href="#">
-  				<img src="img\svg\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
-  			</a>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="footer-top">
+				<a class="footer-logo interactive-exception" href="index.html">
+	  				<img src="img\svg\logo-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
+	  			</a>
 
-  			<nav class="footer-user-navigation">
-				<ul class="user">
-					<li class="log-in"><a href="#">Вoйти</a></li>
-					<li class="compare"><a href="#">Сравнить</a></li>
-					<li class="cart"><a href="#">Корзина</a></li>
+	  			<nav class="footer-user-navigation">
+					<ul class="user no-markers">
+						<li class="log-in"><a href="#">Вoйти</a></li>
+						<li class="compare"><a href="#">Сравнить</a></li>
+						<li class="cart"><a href="#">Корзина</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="footer-middle">
+				<address class="footer-adress">г. Москва, ул. Строителей, 15</address>
+
+				<nav class="footer-navigation">
+	 				<ul class="footer-navigation-items no-markers">
+	  					<li><a href="#">Доставка</a></li>
+	  					<li><a href="#">Гарантия</a></li>
+	  					<li><a href="#">Контакты</a></li>
+	  				</ul>			
+				</nav>
+
+				<span class="tel">Тел.: +7 (495) 495-95-95</span>			
+			</div>
+
+			<div class="footer-bottom">
+				<ul class="social no-markers">
+					<li>
+						<a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a>
+					</li>
+					<li>
+						<a href="#" class="social-inst"><span class="visually-hidden">Instagram</span></a>
+					</li>
+					<li>
+						<a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a>
+					</li>
 				</ul>
-			</nav>
-		</div>
-
-		<div class="footer-middle">
-			<address>г. Москва, ул. Строителей, 15</address>
-
-			<nav class="footer-navigation">
- 				<ul>
-  					<li><a href="#">Доставка</a></li>
-  					<li><a href="#">Гарантия</a></li>
-  					<li><a href="#">Контакты</a></li>
-  				</ul>			
-			</nav>
-
-			<span class="tel">Тел.: +7 (495) 495-95-95</span>			
-		</div>
-
-		<div class="footer-bottom">
-			<ul class="social">
-				<li>
-					<a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a>
-				</li>
-				<li>
-					<a href="#" class="social-inst"><span class="visually-hidden">Instagram</span></a>
-				</li>
-				<li>
-					<a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a>
-				</li>
-			</ul>
-			
-			<a href="#">
-				<img src="img\svg\logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
-			</a>
+				
+				<a href="#">
+					<img src="img\svg\logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
+				</a>
+			</div>
 		</div>
 	</footer>
 

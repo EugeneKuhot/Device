@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="main-header container">
   
-  		<a class="header-logo" href="#">
-  			<img src="img\svg\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
+  		<a href="index.html" class="header-logo interactive-exception">
+  			<img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
   		</a>
 
   		<nav class="user-nav">  				
   			<form class="main-search" action="http://echo.htmlacademy.ru" method="get">  				
   				<input type="search" name="search" value="Поиск по сайту">
-  				
+  				<button type="submit"></button>
   			</form>
 				
-			<ul class="user">
+			<ul class="user no-markers interactive">
 				<li class="header-log-in">
 					<a href="#">Вoйти</a>
 				</li>
@@ -34,20 +34,20 @@
 
 
 		<nav class="main-navigation">
-			<ul class="main-menu">
-				<li><a class="catalog">Каталог товаров</a>
-					<ul class="sub-menu">
+			<ul class="main-menu no-markers">
+				<li><a href="#" class="catalog interactive-exception">Каталог товаров</a>
+					<ul class="sub-menu no-markers interactive">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="#">Фитнеc-браслеты</a></li>
 						<li><a href="#">Квадрокоптеры</a></li>
-						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="catalog.html">Моноподы для селфи</a></li>
 						<li><a href="#">Умные часы</a></li>
 						<li><a href="#">Экшн-камеры</a></li>
 					</ul>
 				</li>
 			</ul>
 
-			<ul class="main-nav-options">
+			<ul class="main-nav-options no-markers interactive">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Контакты</a></li>
@@ -56,10 +56,10 @@
   	</header>
 	
 	<main class="container">
-		<h1 class="visually-hidden">Интернет-магазин Device</h1>
+		<h1 class="visually-hidden page-title">Интернет-магазин Device</h1>
 		
   			<section class="top-item">
-  				<img src="img\png\slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
+  				<img src="img/png/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
   				<span class="top1">01</span>
   				<span class="tagline">Делай селфи, как Бен Стиллер!</span>
   				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -81,7 +81,7 @@
 
   			<section class="all-items">
 
-  				<h2 class="visually-hidden">Группы товаров</h2>
+  				<h2 class="visually-hidden section-title">Группы товаров</h2>
 
   				<ul class="all-items-catalog">
   					<li>
@@ -118,7 +118,7 @@
   			</section>
 <!--
   		<section class="servises">
-  			<h2 class="visually-hidden"></h2>
+  			<h2 class="visually-hidden section-title"></h2>
   			<ul>
   				<li class="delivery">Доставка
   					<div class="delivery-description">
@@ -135,33 +135,33 @@
 -->
 
 		<section class="brands">
-			<h2 class="visually-hidden">Бренды</h2>
+			<h2 class="visually-hidden section-title">Бренды</h2>
 			<ul>
 				<li class="dji">
 					<a href="#">
-						<img src="img\png\dji.png" alt="Логотип фирмы dji">
+						<img src="img/png/dji.png" alt="Логотип фирмы dji">
 					</a>
 				</li>
 				<li class="sp-gadgets">
 					<a  href="#">
-						<img src="img\png\spgadgets.png" alt="Логотип фирмы Sp-gadgets">
+						<img src="img/png/spgadgets.png" alt="Логотип фирмы Sp-gadgets">
 					</a>
 				</li>
 				<li class="gopro">
 					<a href="#">
-						<img src="img\png\gopro.png" alt="Логотип фирмы Go-Pro">
+						<img src="img/png/gopro.png" alt="Логотип фирмы Go-Pro">
 					</a>
 				</li>
 				<li class="vive">
 					<a href="#">
-						<img src="img\png\vive.png" alt="Логотип фирмы Vive">
+						<img src="img/png/vive.png" alt="Логотип фирмы Vive">
 					</a>
 				</li>
 			</ul>
 		</section>
 
 		<section class="about-us">
-			<h2>О нас</h2>
+			<h2 class="section-title">О нас</h2>
 			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 			
@@ -176,10 +176,10 @@
 		</section>
 
 		<section class="contacts">
-			<h2>Контакты</h2>
+			<h2 class="section-title">Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 			<a href="#" class="map">
-				<img src="img\jpg\map.jpg" alt="Расположение магазина Девайс на карте Москвы - улица Строителей 15" width="560" height="222">
+				<img src="img/jpg/map.jpg" alt="Расположение магазина Девайс на карте Москвы - улица Строителей 15" width="560" height="222">
 			</a>
 			<a href="#" class="button contacts-btn">Нaпишите нам</a>
 		</section>
@@ -189,12 +189,12 @@
 	<footer class="page-footer">
 		<div class="container">
 			<div class="footer-top">
-				<a class="footer-logo" href="#">
-	  				<img src="img\svg\logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
+				<a class="footer-logo interactive-exception" href="index.html">
+	  				<img src="img/svg/logo-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
 	  			</a>
 
 	  			<nav class="footer-user-navigation">
-					<ul class="user">
+					<ul class="user-footer no-markers">
 						<li class="log-in"><a href="#">Вoйти</a></li>
 						<li class="compare"><a href="#">Сравнить</a></li>
 						<li class="cart"><a href="#">Корзина</a></li>
@@ -203,10 +203,10 @@
 			</div>
 
 			<div class="footer-middle">
-				<address>г. Москва, ул. Строителей, 15</address>
+				<address class="footer-adress">г. Москва, ул. Строителей, 15</address>
 
 				<nav class="footer-navigation">
-	 				<ul class="footer-navigation-items">
+	 				<ul class="footer-navigation-items no-markers">
 	  					<li><a href="#">Доставка</a></li>
 	  					<li><a href="#">Гарантия</a></li>
 	  					<li><a href="#">Контакты</a></li>
@@ -217,7 +217,7 @@
 			</div>
 
 			<div class="footer-bottom">
-				<ul class="social">
+				<ul class="social no-markers">
 					<li>
 						<a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a>
 					</li>
@@ -230,7 +230,7 @@
 				</ul>
 				
 				<a href="#">
-					<img src="img\svg\logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
+					<img src="img/svg/logo-html.svg" width="27" height="35" alt="HTMLAcademy-logo">
 				</a>
 			</div>
 		</div>

@@ -1,45 +1,43 @@
 @font-face {
-	font-family: "Gilroy - Extra Bold";
+	font-family: "Gilroy";
 	src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
-		 url("../fonts/web/gilroyextrabold.woff") format("woff"),
-		 url("../fonts/gilroy/gilroyextrabold.ttf") format("ttf");
-}/
+		 url("../fonts/web/gilroyextrabold.woff") format("woff");
+	font-weight: 800;
+}
 
 @font-face {
 	font-family: "Gilroy";
 	src: url("../fonts/web/gilroylight.woff2") format("woff2"),
-		 url("../fonts/web/gilroylight.woff") format("woff"),
-		 url("../fonts/gilroy/gilroylight.ttf") format("ttf");
+		 url("../fonts/web/gilroylight.woff") format("woff");
+	font-weight: 300;
 }
 
 @font-face {
 	font-family: "Open Sans";
 	src: url("../fonts/web/opensans.woff2") format("woff2"),
-		 url("../fonts/web/opensans.woff") format("woff"),
-		 url("../fonts/open_sans/OpenSans-Light.ttf") format("ttf");
+		 url("../fonts/web/opensans.woff") format("woff");
+	font-weight: 400;
 		 
 }
 
 
 @font-face {
-	font-family: "Open Sans Light";
+	font-family: "Open Sans";
 	src: url("../fonts/web/opensanslight.woff2") format("woff2"),
-		 url("../fonts/web/opensanslight.woff") format("woff"),
-		 url("../fonts/open_sans/OpenSans-Regular.ttf") format("ttf");
+		 url("../fonts/web/opensanslight.woff") format("woff");
+	font-weight: 300;
 }
-
-
 
 body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Gilroy - Extra Bold", ARIAL BLACK, sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 24px;
 	color: #000000;
-
+	
 	background-color: rgb(255, 255, 255);
 }
 
@@ -48,44 +46,56 @@ a {
 	color: #000000;
 }
 
-h1 {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.page-title {
 	font-size: 47px;
 	font-weight: 400;
 	line-height: 48px;
 	letter-spacing: 0.17px;
 }
 
-h2 {
+.section-title {
 	font-size: 47px;
-	line-height: 48px;
-	font-weight: 400;
-	letter-spacing: 0.21px;
+	line-height: 1.02em;
+	letter-spacing: 0.01em;
 }
 
-h3 {
-	color: #000000;
-	font-size: 18px;
+.item-title {
 	font-weight: 400;
-	line-height: 24px;
 	letter-spacing: 0.18px;
 }
+
 
 .main-header {
 	background-color: #f8e296;
 }
 
-.header-logo:hover,
-.header-logo:focus,
-.user a:focus,
-.user a:hover,
-.main-navigation a:hover,
-.main-navigation a:focus {
+
+
+.interactive-exception:hover,
+.interactive-exception:focus,
+.interactive a:hover,
+.interactive a:focus, 
+.interactive label:hover,
+.interactive label:focus {
 	opacity: 0.6;
 }
 
-.header-logo:active,
-.user a:active,
-.main-navigation a:active {
+.interactive-exception:active,
+.interactive a:active {
 	opacity: 0.3;
 }
 
@@ -98,19 +108,16 @@ h3 {
 	letter-spacing: 0.15px;
 }
 
-.user,
-.main-menu,
-.sub-menu,
-.main-nav-options,
-.footer-navigation-items,
-.social,
-.breadcrumbs,
-.filter-color,
-.filter-bluetooth /*po4emu ne rabotaet*/{
+.no-markers {
 	list-style-type: none;
 
 	margin-left: 0;
 	padding-left: 0;
+}
+
+.main-nav-options a,
+.catalog {	
+	font-weight: 800;
 }
 
 .user {
@@ -124,9 +131,7 @@ h3 {
 
 .main-navigation {
 	color: #000000;
-	font-size: 18px;
 	font-weight: 400;
-	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 3.6px;
 }
@@ -141,20 +146,20 @@ h3 {
 }
 
 
-
-
 .about-us p,
 .contacts p {
 	color: #464646;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	line-height: 30px;
+	line-height: 1,02em;
+	letter-spacing: 0,01em;
 }
 
 .button {
+	font-family: "Gilroy";
+	font-weight: 800;
 	font-size: 18px;
-	font-weight: 400;
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 2.15px;
@@ -162,56 +167,46 @@ h3 {
 	background-color: #f0c52e;
 }
 
-/*po4emu  ne rabotaet 4erez klass*/
-footer {
+.page-footer {
 	background-color: #464646;
 }
 
-address, 
+.footer-adress, 
 .tel {
 	color: #ffffff;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
+	font-style: normal;
 }
 
-/*uto4nit' svoistvo*/
-.footer-logo img {
-	background-color: #ffc600;
+.user-footer {
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: 0.15px;
 }
 
 .footer-navigation-items a {
 	color: #ffffff;
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 3.6px;
 }
 
 .footer-navigation-items a:hover,
- .footer-navigation-items a:active {
+ .footer-navigation-items a:focus {
 	opacity: 0.6;
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 24px;
-	text-transform: uppercase;
-	letter-spacing: 3.6px;
 }
 
 .footer-navigation-items a:active {
 	opacity: 0.3;
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 24px;
-	text-transform: uppercase;
-	letter-spacing: 3.6px;
 }
-
-/*ne rabotaet*/
 
 .footer-user-navigation a {
 	opacity: 0.7;
@@ -226,22 +221,14 @@ address,
 .footer-user-navigation a:hover,
 .footer-user-navigation a:focus {
 	opacity: 1;
-	color: #ffffff;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
-	letter-spacing: 0.15px;
 }
 
 .footer-user-navigation a:active {
 	opacity: 0.3;
-	color: #ffffff;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
-	letter-spacing: 0.15px;
+}
+
+.contact-form {
+	display: none;
 }
 
 .filter {
@@ -249,7 +236,7 @@ address,
 }
 
 .filter-color,
-.filter-bluetooth /*po4emu ne rabotaet*/{
+.filter-bluetooth {
 	color: #000000;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -272,22 +259,10 @@ address,
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
 	opacity: 0.6;
-	color: #000000;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 24px;
-	letter-spacing: 0.14px;
 }
 
 .breadcrumbs a:active {
 	opacity: 0.1;
-	color: #000000;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 24px;
-	letter-spacing: 0.14px;
 }
 
 .price {
@@ -295,6 +270,5 @@ address,
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
-	line-height: 24px;
 	letter-spacing: 0.16px;
 }
