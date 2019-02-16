@@ -29,6 +29,7 @@
 }
 
 body {
+	min-width: 1200px
 	margin: 0;
 	padding: 0;
 
@@ -61,8 +62,9 @@ a {
 
 
 .page-title {
+
 	font-size: 47px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 48px;
 	letter-spacing: 0.17px;
 }
@@ -74,7 +76,7 @@ a {
 }
 
 .item-title {
-	font-weight: 400;
+	font-weight: 800;
 	letter-spacing: 0.18px;
 }
 
@@ -111,8 +113,8 @@ a {
 .no-markers {
 	list-style-type: none;
 
-	margin-left: 0;
-	padding-left: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .main-nav-options a,
@@ -271,4 +273,133 @@ a {
 	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: 0.16px;
+}
+
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	
+}
+
+.header-background {
+	margin-top: 40px;
+	padding-top: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.user {
+	display: flex;
+}
+
+.header-logo {
+	position: absolute;
+	top: 20px;
+    left: 155px;
+}
+
+.user-nav,
+.main-navigation {
+	width: 1040px;
+}
+
+.log-in {
+	width: 260px;
+}
+
+.compare,
+.cart {
+	width: 100px;
+	margin-left: 20px;
+	text-align: right;
+}
+
+.main-navigation {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-nav-options {
+	width: 500px;
+}
+
+
+.about-us {
+	width: 460px;
+	min-height: 505px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contacts {
+	width: 560px;
+	min-height: 505px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.transport {
+	min-height: 95px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.page-footer {
+	margin-top: 100px;
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+.user-nav,
+.main-navigation,
+.main-nav-options,
+.contact-block,
+.footer-top,
+.user-footer,
+.footer-middle,
+.footer-navigation,
+.footer-navigation-items,
+.footer-bottom,
+.social,
+.breadcrumbs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-user-navigation {
+	align-items: flex-end;
+}
+
+.footer-navigation-items {
+	width: 440px;
+}
+
+.footer-middle {
+	margin-top: 50px;
+}
+
+.footer-bottom {
+	margin-top: 65px;
+}
+
+.breadcrumbs {
+	width: 385px;
+}
+
+.main-shop {
+	display: flex;
+}
+
+.filter {
+	width: 328px;
+}
+
+.items {
+	width: 833px;
 }

@@ -8,34 +8,35 @@
   </head>
   <body>
   	<header class="main-header container">
-  
-  		<a href="index.html" class="header-logo interactive-exception">
+
+		<a href="index.html" class="header-logo interactive-exception">
   			<img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
-  		</a>
+   		</a>
 
-  		<nav class="user-nav">  				
-  			<form class="main-search" action="http://echo.htmlacademy.ru" method="get">  				
-  				<input type="search" name="search" value="Поиск по сайту">
-  				<button type="submit"></button>
-  			</form>
-				
-			<ul class="user no-markers interactive">
-				<li class="header-log-in">
-					<a href="#">Вoйти</a>
-				</li>
-				<li class="compare">
-					<a href="#">Сравнить</a>
-				</li>
-				<li class="cart">
-					<a href="#">Корзина</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="header-background">
+			
+			<nav class="user-nav">  				
+			  	<form class="main-search" action="http://echo.htmlacademy.ru" method="get">  				
+			  		<input type="search" name="search" value="Поиск по сайту">
+			  		<button type="submit"></button>
+			  	</form>
+						
+				<ul class="user no-markers interactive">
+					<li class="log-in">
+						<a href="#">Вoйти</a>
+					</li>
+					<li class="compare">
+						<a href="#">Сравнить</a>
+					</li>
+					<li class="cart">
+						<a href="#">Корзина</a>
+					</li>
+				</ul>
+			</nav>
 
-
-		<nav class="main-navigation">
-			<ul class="main-menu no-markers">
-				<li><a href="#" class="catalog interactive-exception">Каталог товаров</a>
+			<nav class="main-navigation">
+				<ul class="main-menu no-markers">
+					<li class="catalog-list"><a href="#" class="catalog interactive-exception">Каталог товаров</a>
 					<ul class="sub-menu no-markers interactive">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="#">Фитнеc-браслеты</a></li>
@@ -44,15 +45,15 @@
 						<li><a href="#">Умные часы</a></li>
 						<li><a href="#">Экшн-камеры</a></li>
 					</ul>
-				</li>
-			</ul>
-
-			<ul class="main-nav-options no-markers interactive">
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-  		</nav>
+				</ul>
+				
+				<ul class="main-nav-options no-markers interactive">
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#" class="contact-btn">Контакты</a></li>
+				</ul>
+		  	</nav>
+		</div>
   	</header>
 	
 	<main class="container">
@@ -133,10 +134,10 @@
   		</section>
 
 -->
-
+	
 		<section class="brands">
 			<h2 class="visually-hidden section-title">Бренды</h2>
-			<ul>
+			<ul class="no-markers">
 				<li class="dji">
 					<a href="#">
 						<img src="img/png/dji.png" alt="Логотип фирмы dji">
@@ -160,29 +161,29 @@
 			</ul>
 		</section>
 
-		<section class="about-us">
-			<h2 class="section-title">О нас</h2>
-			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-			
-			<!--Вижу что последний абзац логически связан со списком, но ничего с этим не могу поделать-->
+		<div class="contact-block container">
+			<section class="about-us">
+				<h2 class="section-title">О нас</h2>
+				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
-			<ul class="transport">
-				<li>Деловые Линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
-			</ul>
-			<a href="#" class="button about-us-btn">Подробнее о нас</a>
-		</section>
+				<ul class="transport">
+					<li>Деловые Линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#" class="button about-us-btn">Подробнее о нас</a>
+			</section>
 
-		<section class="contacts">
-			<h2 class="section-title">Контакты</h2>
-			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-			<a href="#" class="map">
-				<img src="img/jpg/map.jpg" alt="Расположение магазина Девайс на карте Москвы - улица Строителей 15" width="560" height="222">
-			</a>
-			<a href="#" class="button contacts-btn">Нaпишите нам</a>
-		</section>
+			<section class="contacts">
+				<h2 class="section-title">Контакты</h2>
+				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+				<a href="#" class="map">
+					<img src="img/jpg/map.jpg" alt="Расположение магазина Девайс на карте Москвы - улица Строителей 15" width="560" height="222">
+				</a>
+				<a href="#" class="button contacts-btn">Нaпишите нам</a>
+			</section>
+		</div>
 		
 	</main>
 
@@ -195,7 +196,7 @@
 
 	  			<nav class="footer-user-navigation">
 					<ul class="user-footer no-markers">
-						<li class="log-in"><a href="#">Вoйти</a></li>
+						<li class="footer-log-in"><a href="#">Вoйти</a></li>
 						<li class="compare"><a href="#">Сравнить</a></li>
 						<li class="cart"><a href="#">Корзина</a></li>
 					</ul>
