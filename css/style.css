@@ -277,8 +277,9 @@ a {
 
 
 .container {
-	width: 1160px;
+	width: 1200px;
 	margin: 0 auto;
+	padding: 0 20px 0 20px;
 	
 }
 
@@ -397,9 +398,40 @@ a {
 }
 
 .filter {
-	width: 328px;
+	width: 330px;
 }
 
-.items {
+.items-section {
 	width: 833px;
+	padding-left: 73px;
+}
+
+.items-block {
+	display: flex;
+	width: 760px;
+
+}
+
+.items-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+}
+
+.price-block {
+	display: flex;
+	width: 360px;
+}
+
+.price-block h3 {
+	width: 260px;
+}
+
+.price {
+	width: 80px;
 }
