@@ -28,8 +28,18 @@
 	font-weight: 300;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
-	min-width: 1200px
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 
@@ -82,7 +92,8 @@ a {
 
 
 .main-header {
-	background-color: #f8e296;
+	padding-top: 40px;
+	position: relative;
 }
 
 
@@ -150,12 +161,21 @@ a {
 
 .about-us p,
 .contacts p {
+	margin-top: 45px;
 	color: #464646;
 	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 300;
-	line-height: 1,02em;
-	letter-spacing: 0,01em;
+	line-height: 2em;
+	letter-spacing: 0em;
+}
+
+.contact-block-second-p {
+	margin-top: 45px;
+}
+
+.map-link-block {
+	margin-top: 45px;
 }
 
 .button {
@@ -167,6 +187,18 @@ a {
 	letter-spacing: 2.15px;
 
 	background-color: #f0c52e;
+}
+
+.about-us-btn,
+.contacts-btn {
+	display: block;
+	max-width: 260px;
+	margin-top: 80px;
+	text-align: center;
+}
+
+.about-us-btn {
+	margin-top: 75px;
 }
 
 .page-footer {
@@ -279,15 +311,17 @@ a {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px 0 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	
 }
 
 .header-background {
-	margin-top: 40px;
 	padding-top: 50px;
 	padding-left: 60px;
 	padding-right: 60px;
+	background-color: #f8e296;
+
 }
 
 .user {
@@ -296,8 +330,8 @@ a {
 
 .header-logo {
 	position: absolute;
-	top: 20px;
-    left: 155px;
+	top: 22px;
+    left: 80px;
 }
 
 .user-nav,
@@ -318,36 +352,81 @@ a {
 
 .main-navigation {
 	margin-top: 50px;
-	display: flex;
-	justify-content: space-between;
 }
 
-.main-nav-options {
-	width: 500px;
+.sub-menu {
+	display: none;
 }
+
+.catalog-list:hover .sub-menu {
+	display: flex;
+	position: absolute;
+	left: 20px;
+	top: 190px;
+	background-color: #f8e296;
+	width: 1160px;
+	padding-left: 60px;
+	padding-top: 50px;
+}
+
+
+.catalog-list {
+	display: flex;
+}
+
+.column {
+	margin-right: 40px;
+}
+
+.column-1 {
+	width: 200px;
+}
+
+.column-2 {
+	width: 160px;
+}
+
+.contact-btn,
+.gwarrancy-btn,
+.delivery-btn {
+	text-align: right;
+}
+
+.contact-btn {
+	width: 140px;
+	margin-left: 60px;
+}
+
+.gwarrancy-btn {
+	align-items: flex-end;
+	width: 140px;
+	margin-left: 40px;
+}
+
 
 
 .about-us {
 	width: 460px;
 	min-height: 505px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .contacts {
 	width: 560px;
 	min-height: 505px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .transport {
 	min-height: 95px;
+	margin-top: 80px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	line-height: 2.5em;
+}
+
+.map-link {
+	display: block;
+	height: 222px;
 }
 
 
@@ -358,8 +437,6 @@ a {
 }
 
 .user-nav,
-.main-navigation,
-.main-nav-options,
 .contact-block,
 .footer-top,
 .user-footer,
@@ -371,6 +448,10 @@ a {
 .breadcrumbs {
 	display: flex;
 	justify-content: space-between;
+}
+
+.main-menu {
+	display: flex;
 }
 
 .footer-user-navigation {
