@@ -57,6 +57,11 @@ a {
 	color: #000000;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -372,10 +377,12 @@ a {
 
 .catalog-list {
 	display: flex;
+	margin-right: auto;
 }
 
 .column {
 	margin-right: 40px;
+
 }
 
 .column-1 {
@@ -392,17 +399,26 @@ a {
 	text-align: right;
 }
 
+.delivery-btn {
+	margin-right: auto;
+}
+
 .contact-btn {
 	width: 140px;
 	margin-left: 60px;
+	margin-right: auto;
 }
 
 .gwarrancy-btn {
-	align-items: flex-end;
+
 	width: 140px;
 	margin-left: 40px;
+	margin-right: auto;
 }
 
+.delivery-btn {
+	margin-right: auto;
+}
 
 
 .about-us {
@@ -443,7 +459,6 @@ a {
 .footer-middle,
 .footer-navigation,
 .footer-navigation-items,
-.footer-bottom,
 .social,
 .breadcrumbs {
 	display: flex;
@@ -469,6 +484,27 @@ a {
 .footer-bottom {
 	margin-top: 65px;
 }
+
+.footer-bottom {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .breadcrumbs {
 	width: 385px;
