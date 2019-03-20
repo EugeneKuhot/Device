@@ -17,8 +17,8 @@
 			
 			<nav class="user-nav">  				
 			  	<form class="search-form" action="http://echo.htmlacademy.ru" method="get">  				
-			  		<input type="search" name="search" placeholder="Поиск по сайту">
-			  		<button type="submit"></button>
+			  		<input class="input-search" type="search" name="search" placeholder="Поиск по сайту">
+			  		<button class="btn-search" type="submit">Найти</button>
 			  	</form>
 						
 				<ul class="user no-markers interactive">
@@ -70,31 +70,95 @@
 		</div>
   	</header>
 	
-	<main class="container">
+	<main>
 		<h1 class="visually-hidden page-title">Интернет-магазин Device</h1>
 		
-  			<section class="top-item">
-  				<img src="img/png/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
-  				<span class="top1">01</span>
-  				<span class="tagline">Делай селфи, как Бен Стиллер!</span>
-  				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-  				<a href="#">Подробнее</a>
+  			<section class="slider-1 top-item container ">
+				<div class="bg-main-top">
+					<span>01</span>
+				</div>
+				<div class="top-item-content">
+					<img src="img/png/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
+					<div class="top-item-description">
+						<p class="tagline">Делай селфи,<br> как Бен Стиллер!</p>
+						<p class="tagline-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+						<a href="#" class="button item-details-btn">Подробнее</a>
+						<form class="slider-btn"> 
+							<input type="radio" name="rr" id="r1" class="visually-hidden" checked>
+							<label for="r1"></label>
+							<input type="radio" name="rr" id="r2" class="visually-hidden">
+							<label for="r2"></label>
+							<input type="radio" name="rr" id="r3" class="visually-hidden">
+							<label for="r3"></label>
+						</form>
+						<div class="item-description">
+							<p>8,5 м</p>
+							<p>5 кг</p>
+							<p>Карбон</p>
+							<p class="item-settings">Длина палки</p>
+							<p class="item-settings">Вес палки</p>
+							<p class="item-settings">Материал</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-  				<table class="item-description">
-  					<tr>
-  						<td>8,5 м</td>
-  						<td>5 кг</td>
-  						<td>Карбон</td>
-  					</tr>
-  					<tr>
-  						<td>Длина палки</td>
-  						<td>Вес палки</td>
-  						<td>Материал</td>
-  					</tr>
-  				</table>
-  			</section>
+			<section class="top-item slider-2 container ">
+				<div class="bg-main-top">
+					<span>02</span>
+				</div>
+				<div class="top-item-content">
+					<img src="img/png/slider-2.png" width="345" height="485" alt="Фотография фитнесс-браслета">
+					<div class="top-item-description">
+						<p class="tagline">Худеем<br>правильно!</p>
+						<p class="tagline-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+						<a href="#" class="button item-details-btn">Подробнее</a>
+						<form class="slider-btn"> 
+							<input type="radio" name="rr" id="r1" class="visually-hidden">
+							<label for="r1"></label>
+							<input type="radio" name="rr" id="r2" class="visually-hidden" checked>
+							<label for="r2"></label>
+							<input type="radio" name="rr" id="r3" class="visually-hidden">
+							<label for="r3"></label>
+						</form>
+						<div class="item-description fitness-width">
+							<p>48 часов</p>
+							<p class="item-settings">Без подзарядки</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-  			<section class="all-items">
+			<section class="top-item slider-3 container active-slide">
+				<div class="bg-main-top">
+					<span>03</span>
+				</div>
+				<div class="top-item-content">
+					<img src="img/png/slider-3.png" width="526" height="334" alt="Фотография квадрокоптера">
+					<div class="top-item-description">
+						<p class="tagline">Порхает как бабочка, жалит как пчела!</p>
+						<p class="tagline-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+						<a href="#" class="button item-details-btn">Подробнее</a>
+						<form class="slider-btn"> 
+							<input type="radio" name="rr" id="r1" class="visually-hidden" checked>
+							<label for="r1"></label>
+							<input type="radio" name="rr" id="r2" class="visually-hidden">
+							<label for="r2"></label>
+							<input type="radio" name="rr" id="r3" class="visually-hidden">
+							<label for="r3"></label>
+						</form>
+						<div class="item-description">
+							<p>800 м</p>
+							<p>50 м</p>
+							<p class="item-settings">Дальность полета</p>
+							<p class="item-settings">Радиус поражения</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+  			<section class="all-items container">
 
   				<h2 class="visually-hidden section-title">Группы товаров</h2>
 
@@ -131,24 +195,18 @@
   					</li>
   				</ul>
   			</section>
+			<div class="servises-wc">
+		  		<section class="servises container">
+		  			<h2 class="visually-hidden section-title"></h2>
+		  			<ul class="no-markers">
+		  				<li>
+            				<label class="device-btn" for="services-btn-1">Доставка</label>
+          				</li>
+		  			</ul>
+		  		</section>
+			</div>
 
-	  		<section class="servises">
-	  			<h2 class="visually-hidden section-title"></h2>
-	  			<ul>
-	  				<li class="delivery">Доставка
-	  					<div class="delivery-description">
-		  					<h3>Доставка</h3>
-		  					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-						</div>
-	  				</li>
-	  					
-	  				<li></li>
-	  				<li></li>
-	  			</ul>
-	  		</section>
-
-
-		<section class="brands">
+		<section class="brands container">
 			<h2 class="visually-hidden section-title">Бренды</h2>
 			<ul class="brands-block no-markers">
 				<li class="dji">
@@ -174,7 +232,7 @@
 			</ul>
 		</section>
 
-		<div class="contact-block">
+		<div class="contact-block container">
 			<section class="about-us">
 				<h2 class="section-title">О нас</h2>
 				<p class="contact-block-first-p">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -282,38 +340,25 @@
 	</footer>
 
 
-	<div class="contact-form">
+	<div class="modal-write-us modal-show">
+    	<button class="modal-close" type="button">Закрыть</button>
+    	<form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+    		<div class="write-name-block">
+	      		<label class="form-write-us-name" for="modal-form-name">Ваше имя:</label>
+	        	<input type="text" name="name" id="modal-form-name" placeholder="Имя Фамилия">
+	        </div>
+	        <div class="write-mail-block">
+	      		<label class="form-write-us-email" for="modal-form-email">Ваш e-mail:</label>
+	        	<input type="text" name="email" id="modal-form-email" placeholder="email@example.com">
+	        </div>
+	        <div class="write-area-block">
+	    		<label class="form-write-us-letter">Текст письма:<br>
+	        		<textarea name="letter" placeholder="В свободной форме"></textarea>
+	      		</label>
+	      		<button class="device-btn" type="submit">Отправить</button>
+	      	</div>
 
-		<form action="http://echo.htmlacademy.ru" method="post">
-			
-			<p class="your-name">
-				<label>
-					Ваше имя:
-					<input type="text" name="name" placeholder="Имя Фамилия" required>
-				</label>
-			</p>
-			
-			<p class="your-email">
-				<label>
-					Ваш e-mail:
-					<input type="email" name="e-mail" placeholder="email@example.com" required>
-				</label>
-			</p>
-
-			<p class="letter-text">
-				<label>
-					Текст письма:
-					<textarea placeholder="В свободной форме">
-					</textarea>
-				</label>
-			</p>
-			<button type="submit" name="submit" value="Отправить">
-		</form>
+    	</form>
 	</div>
-
-	<div class="map">
-		
-	</div>
-
    </body>
 </html>

@@ -17,8 +17,8 @@
 
 	  		<nav class="user-nav">  				
 	  			<form class="search-form" action="http://echo.htmlacademy.ru" method="get">  				
-	  				<input type="search" name="search" value="Поиск по сайту">
-	  				<button type="submit"></button>
+	  				<input class="input-search" type="search" name="search" placeholder="Поиск по сайту">
+	  				<button class="btn-search" type="submit">Найти</button>
 	  			</form>
 					
 				<ul class="user no-markers interactive">
@@ -79,14 +79,16 @@
 
 			<ul class="breadcrumbs no-markers">			
 				<li class="main-page"><a href="#">Главная</a></li>
-				<li class="breadcrumbs-catalog"><a href="#">Каталог товаров</a></li>
-				<li><span class="breadcrumbs-current">Моноподы для селфи</span></li>
+				<li class="breadcrumbs-catalog second-crumb"><a href="#">Каталог товаров</a></li>
+				<li class="breadcrumbs-current-list"><span class="breadcrumbs-current">Моноподы для селфи</span></li>
 			</ul>
 		</div>
 		
 		<div class="filter-title-wc">
 			<div class="filter-title-block container">
-				<h3 class="filter-title">ФИЛЬТР:</h3>
+				<div class="filter-h">
+					<h3 class="filter-title">ФИЛЬТР:</h3>
+				</div>
 				<div class="catalog-sort">
 					<h3 class="sort-title">СОРТИРОВКА:</h3>
 					<ul class="sort-type no-markers">
@@ -110,44 +112,66 @@
 						<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
 
 						<fieldset>
-							
+    						<legend class="form-legend">Стоимость</legend><div class="range-controls">
+   							<div class="scale">
+      							<div class="bar"></div>
+   							</div>
+    						<div>
+   								<div class="toggle toggle-min"></div>
+   								<div class="toggle toggle-max"></div>
+   							</div>
+    						<div class="selected-price">
+                				<span class="price-from">от 0</span>
+                				<span class="price-to">до 5000</span>
+              				</div>
 						</fieldset>
-								<h3 class="item-title">Цвет</h3>
-									<ul class="filter-color no-markers interactive">
+
+						<fieldset>
+								<legend class="form-legend">Цвет</legend>
+									<ul class="filter-color no-markers ">
 										<li>
-											<label for="filter-color-black">
-												<input type="checkbox" id="filter-color-black" name="filter-color-black" checked>Чёрный											
+											<input type="checkbox" id="filter-color-black" name="filter-color-black" checked>
+											<label for="filter-color-black">Чёрный</label>
+											
+											
+																						
 										</li>
 										<li>
-											<label for="filter-color-white">
-												<input type="checkbox" id="filter-color-white" name="filter-color-white">Белый											
+											<input type="checkbox" id="filter-color-white" name="filter-color-white">
+											<label for="filter-color-white">Белый</label>																						
 										</li>
 										<li>
-											<label for="filter-color-blue">
-												<input type="checkbox" id="filter-color-blue" name="filter-color-blue" checked>Синий										
+											<input type="checkbox" id="filter-color-blue" name="filter-color-blue" checked>
+											<label for="filter-color-blue">Синий</label>
+																					
 										</li>
 										<li>
-											<label for="filter-color-red">
-												<input type="checkbox" id="filter-color-red" name="filter-color-red" checked>Красный
+											<input type="checkbox" id="filter-color-red" name="filter-color-red" checked>
+											<label for="filter-color-red">Красный</label>
+											
 										</li>
 										<li>
-											<label for="filter-color-pink">
-												<input type="checkbox" id="filter-color-pink" name="filter-color-pink">Розовый
+											<input type="checkbox" id="filter-color-pink" name="filter-color-pink">
+											<label for="filter-color-pink">Розовый</label>
+											
 										</li>
 									</ul>
-								<h3 class="item-title">Bluetooth</h3>
-								<ul class="filter-bluetooth no-markers interactive">
-									<li>
-										<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
-										<label for="blth-yes">Есть</label>
-									</li>
-									<li>
-										<input type="radio" name="bluetooth" id="blth-no" value="Нет">
-										<label for="blth-no">Нет</label>
-									</li>
-								</ul>
-								<input class="button" type="submit" value="Показать">
-
+								</fieldset>
+								
+								<fieldset>
+									<legend class="form-legend">Bluetooth</legend>	
+									<ul class="filter-bluetooth no-markers">
+										<li>
+											<input type="radio" name="bluetooth" id="blth-yes" value="Есть" checked> 
+											<label for="blth-yes">Есть</label>
+										</li>
+										<li>
+											<input type="radio" name="bluetooth" id="blth-no" value="Нет">
+											<label for="blth-no">Нет</label>
+										</li>
+									</ul>
+									<button class="filter-button" type="submit">Показать</button>
+								</fieldset>
 						</form>
 					</section>
 
@@ -183,20 +207,24 @@
 								</div>
 							</li>
 							<li class="item">
-								<img src="img/jpg/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+								<div class="item-image-wrap">
+									<img src="img/jpg/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 									<a class="object-action-buy" href="basket.html">В корзину</a>
                 					<a class="object-action-compare" href="#">Добавить к сравнению</a>
+                				</div>
 								<div class="price-block">
 									<a href="#">
 										<h3 class="item-title">Непотопляемая селфи-палка</h3>
 									</a>
-										<span class="price">2 500 руб</span>
+										<span class="price">2 500 руб.</span>
 								</div>
 							</li>
-							<li class="item">
-								<img src="img/jpg/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+							<li class="item new">
+								<div class="item-image-wrap">
+									<img src="img/jpg/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 									<a class="object-action-buy" href="basket.html">В корзину</a>
                 					<a class="object-action-compare" href="#">Добавить к сравнению</a>
+                				</div>
 								<div class="price-block">
 									<a href="#">
 										<h3 class="item-title">Селфи-палка «Следуй за мной»</h3>
