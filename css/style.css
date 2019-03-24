@@ -219,6 +219,7 @@
      letter-spacing: 0.15px;
      text-transform: none;
      padding-bottom: 6px;
+     z-index: 2;
 }
  .all-items-catalog {
      display: flex;
@@ -342,28 +343,29 @@
  .brands-block {
      display: flex;
      justify-content: flex-end;
+     margin-right: 17px;
 }
  .dji {
      margin-right: 40px;
 }
  .dji a {
-     background-image: url(../img/png/dji.png);
+     background-image: url(../img/jpg/logo-1.jpg);
 }
  .sp-gadgets {
      margin-right: 41px;
 }
  .sp-gadgets a {
-     background-image: url(../img/png/spgadgets.png);
+     background-image: url(../img/jpg/logo-2.jpg);
 }
  .gopro a {
-     background-image: url(../img/png/gopro.png);
+     background-image: url(../img/jpg/logo-3.jpg);
 }
  .vive {
      margin-right: -16px;
      margin-left: 37px;
 }
  .vive a {
-     background-image: url(../img/png/vive.png);
+     background-image: url(../img/jpg/logo-4.jpg);
 }
  .brands-block img {
      opacity: 0;
@@ -448,8 +450,8 @@
 }
  .contacts-btn:hover::before, .contacts-btn:focus::before, .about-us-btn:hover::before, .about-us-btn:focus::before {
      width: 260px;
-     height: 100%;
-     top: 0px;
+	 height: 40px;
+     top: -7px;
      transition: all .2s ease-in-out;
 }
  .page-footer {
@@ -920,7 +922,7 @@
      background-color: #ebebeb;
 }
  .sort-type {
-     font-family: "Open Sans";
+     font-family: "Open Sans", Arial, sans-serif;
      font-weight: 300;
      display: flex;
      height: 28px;
@@ -943,7 +945,7 @@
      opacity: 1;
 }
  a.current {
-     font-family: "Open Sans";
+     font-family: "Open Sans", Arial, sans-serif;
      font-weight: 800;
      opacity: 1;
 }
@@ -1010,7 +1012,6 @@
      width: 100px;
      height: 25px;
      margin-top: 27px;
-     margin-left: 21px;
      text-align: right;
 }
  .main-shop-wc {
@@ -1456,7 +1457,7 @@
  .object-action-compare {
      position: absolute;
      display: none;
-     font-family: "Open Sans";
+     font-family: "Open Sans", Arial, sans-serif;
      font-weight: 300;
      font-size: 12px;
      top: 222px;
@@ -1639,7 +1640,7 @@
  .slider-btn {
      position: absolute;
      top: 324px;
-     right: 72px;
+     right: 6px;
 }
  .slider-btn input {
      margin-right: 20px;
@@ -1658,7 +1659,7 @@
 }
  .item-description p {
      margin-bottom: 0px;
-     margin-right: 60px;
+	 margin-right: 77px;
 }
  .item-description .item-first-p {
      margin-right: 0px;
@@ -1676,7 +1677,7 @@
      line-height: 20px;
      letter-spacing: 0.01em;
      margin-top: 6px;
-     margin-right: 30px;
+	 margin-right: 80px;
 }
  .top-item {
      margin-bottom: 98px;
@@ -1756,9 +1757,9 @@
      display: none;
 }
  .current-service {
+ 	 position: relative;
      display: block;
-     width: 456px;
-     display: block;
+ 	 width: 436px;
      margin-left: 18px;
 }
  .services-labels {
@@ -1770,7 +1771,7 @@
 }
  .services-text {
      position: relative;
-     width: 430px;
+     width: 457px;
      top: -51px;
      left: 97px;
 }
@@ -1781,6 +1782,7 @@
      letter-spacing: 0.015em;
 }
  .services-text div p {
+ 	position: relative;
      font-size: 15px;
      font-family: "Open Sans", Arial, Sans-serif;
      font-weight: 300;
@@ -1791,8 +1793,8 @@
  .delivery::after {
      content:"";
      position: absolute;
-     right: -281px;
-     top: 47px;
+     right: -257px;
+     top: 1px;
      background-image: url("../img/svg/delivery.svg");
      background-repeat: no-repeat;
      width: 136px;
@@ -1802,8 +1804,8 @@
  .warranty::after {
      content:"";
      position: absolute;
-     right: -300px;
-     top: 60px;
+     right: -276px;
+     top: -22px;
      background-image: url("../img/svg/warranty.svg");
      background-repeat: no-repeat;
      width: 171px;
@@ -1813,8 +1815,8 @@
  .credit::after {
      content:"";
      position: absolute;
-     right: -300px;
-     top: 60px;
+     right: -251px;
+     top: 23px;
      background-image: url("../img/svg/credit.svg");
      background-repeat: no-repeat;
      width: 156px;
@@ -1967,4 +1969,7 @@
  .form-write-us .invalid, .form-write-us .invalid:hover {
      background-color: #f6dada;
 }
- 
+
+.iframe-bord {
+	border: 0;
+}
