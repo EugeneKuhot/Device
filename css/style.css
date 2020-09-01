@@ -56,6 +56,7 @@ img {
 
 .index-main {
   margin-bottom: 91px;
+  position: relative;
 }
 
 .visually-hidden {
@@ -2097,8 +2098,9 @@ a.footer-quit {
 
 .slider-btn {
   position: absolute;
-  top: 324px;
-  right: 6px;
+  top: 325px;
+  right: 190px;
+  z-index: 2;
 }
 
 .slider-btn input {
@@ -2158,6 +2160,10 @@ a.footer-quit {
   width: 550px;
   margin-left: 23px;
   margin-right: 0px;
+}
+
+.top-item-description .item-details-btn {
+  width: 230px;
 }
 
 .slider-3 img {
